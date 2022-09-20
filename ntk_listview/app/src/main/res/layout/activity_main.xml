@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0BE421"
+    tools:context=".MainActivity">
+
+
+    <ListView
+        android:id="@+id/listviewMonHoc"
+        android:layout_width="409dp"
+        android:layout_height="354dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonThem" />
+
+    <EditText
+        android:id="@+id/editTextMonHoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhap mon hoc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#DA1212"
+        android:text="Thêm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMonHoc" />
+
+    <Button
+        android:id="@+id/buttonCapNhat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#DA1212"
+        android:text="Cập nhật"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonXoa"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMonHoc" />
+
+    <Button
+        android:id="@+id/buttonXoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:backgroundTint="#DA1212"
+        android:layout_marginTop="36dp"
+        android:text="Xoá"
+        app:layout_constraintStart_toEndOf="@+id/buttonThem"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMonHoc" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
